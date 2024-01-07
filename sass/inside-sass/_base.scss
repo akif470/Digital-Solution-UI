@@ -1,0 +1,74 @@
+*,
+*::before ,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+// opensans
+@font-face {
+	font-family: opensans;
+	src: url(../font@face/opensans/OpenSans-Regular.ttf);
+}
+// raleway
+@font-face {
+	font-family: raleway;
+	src: url(../font@face/raleway/Raleway-Regular.ttf);
+}
+@font-face {
+	font-family: raleway-bold;
+	src: url(../font@face/raleway/Raleway-bold.ttf);
+}
+@font-face {
+	font-family: raleway-medium;
+	src: url(../font@face/raleway/Raleway-Medium.ttf);
+}
+// poppins
+@font-face {
+	font-family: poppins;
+	src: url(../font@face/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+	font-family: poppins-bold;
+	src: url(../font@face/poppins/poppins-bold.ttf);
+}
+@font-face {
+	font-family: poppins-medium;
+	src: url(../font@face/poppins/poppins-Medium.ttf);
+}
+body {
+	font-family: opensans;
+    color: $body-color;
+    // background: $black-color;
+}
+// section-properties
+// section-properties
+.section-title {
+	font-size: 14px;
+	font-weight: 500;
+	// line-height: 1px;
+	margin: 0 0 5px 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #aaaaaa;
+	font-family: poppins-medium;
+	&::after {
+		content: "";
+    	width: 120px;
+    	height: 2px;
+    	display: inline-block;
+    	background: #ffde9e;
+    	margin: 4px 10px;
+	}
+}
+.section-p {
+    line-height: 4rem !important;
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-family: Poppins-bold !important;
+    color: #151515 !important;
+}
